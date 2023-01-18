@@ -125,6 +125,8 @@ class PrevencionRiesgos {
 	
 	public static void datosAdmin() {
 		
+		datosBasicos();
+		
 		while(true) {
 			
 		System.out.print("Ingresa tu funcion: ");
@@ -207,7 +209,7 @@ class PrevencionRiesgos {
 				if(!usuarios.matches("[0-9]")) {
 					System.out.println("Ingrese una cantidad de usuarios correcta");
 				}
-				else if (usuarios == "0"){
+				else if (usuarios.equals("0")){
 					System.out.println("Ingrese una cantidad distinta a cero por favor");
 				}
 				else {
