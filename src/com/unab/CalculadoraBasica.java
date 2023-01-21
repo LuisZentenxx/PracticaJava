@@ -14,7 +14,7 @@ public class CalculadoraBasica {
 	static double div;
 	static String operacion;
 
-	
+	// Funciones 
 	static void numeros() {
 		
 		while(true) {
@@ -89,6 +89,16 @@ public class CalculadoraBasica {
 		
 		mod = n1%n2;
 		
+		while(true) {
+			
+			if(n2==0) {
+				System.out.println("No es posible sacar el modulo de un valor divisble por 0, ingresa un valor valido");
+				numeros();
+			}else {
+				break;
+			}
+		}
+		
 		System.out.println("El modulo es: " + mod);
 	}
 	
@@ -104,7 +114,7 @@ public class CalculadoraBasica {
 		
 		while(true) {
 		
-		System.out.println("\nElige tu operacion: ");
+		System.out.println("\nElige el simbolo de la operacion : ");
 		operacion = sr.nextLine();
 		
 			switch(operacion) {
